@@ -4,7 +4,8 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                sh """npm install
+                sh """cd ClientApp
+                      npm install
                       npm run build-prod"""
 
             }
@@ -18,7 +19,7 @@ pipeline{
             steps{
                 sh """
                 rm -rf /var/www/xbank-angular/dist
-                cp -a ./dist/ /var/www/xbank-angular/dist"""
+                cp -a ./ClientApp/dist/ /var/www/xbank-angular/dist"""
             }
         }
     }
