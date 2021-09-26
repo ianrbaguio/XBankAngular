@@ -1,0 +1,42 @@
+h3{
+    text-align:center;
+    font-weight:bold;
+}
+
+label{
+    padding: 0 10px;
+    min-width:40%;
+    text-align: right;
+    display: inline-block;
+}
+
+.new-transaction-container{
+    width:50%;
+    margin:25px auto;
+}
+
+.form-input{
+    padding: 10px 0;
+}
+
+.button-container{
+    width: 20%;
+    margin:0 auto; 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    .button-container{
+        width: 50%
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (max-width: 992px) {
+    
+  }

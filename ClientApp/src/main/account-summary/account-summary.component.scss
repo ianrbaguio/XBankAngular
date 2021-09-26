@@ -1,0 +1,116 @@
+.as-container {
+  width: 75%;
+  margin: 50px auto;
+}
+
+.savings-header-container,
+.chequing-header-container {
+  width: 35%;
+  display: inline-block;
+  height: 70px;
+  border: 1px solid black;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.savings-services-container,
+.chequing-services-container {
+  display: inline-block;
+  width: 15%;
+  vertical-align: top;
+  margin: 10px 0;
+}
+.savings-services-container .option,
+.chequing-services-container .option {
+  width: 100%;
+  height: 25px;
+  padding: 10px;
+  border: 1px solid white;
+  text-align: center;
+  background-color: rgba(0, 0, 255, 0.7);
+  color: white;
+  display: inline-block;
+}
+
+.savings-balance,
+.chequing-balance {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.services {
+  width: 100%;
+}
+
+.accounts {
+  margin: 50px 0;
+}
+
+.options-container {
+  width: 60%;
+  display: inline-block;
+}
+
+.account-services-container {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.account-services li {
+  text-align: left;
+}
+
+.account-services {
+  width: 100%;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.option {
+  width: 45%;
+  height: 25px;
+  padding: 10px;
+  border: 1px solid white;
+  text-align: center;
+  background-color: rgba(0, 0, 255, 0.7);
+  color: white;
+  display: inline-block;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .services {
+    display: none;
+  }
+
+  .savings-header-container,
+  .chequing-header-container {
+    width: 100%;
+    min-height: 50px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 20px 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .savings-header-container,
+  .chequing-header-container {
+    width: 50%;
+  }
+
+  .option {
+    width: 40%;
+  }
+
+  .savings-services-container .option,
+  .chequing-services-container .option {
+    display: none;
+  }
+}

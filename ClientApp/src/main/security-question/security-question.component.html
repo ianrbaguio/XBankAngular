@@ -1,0 +1,35 @@
+<div class="full-page">
+  <div class="header-logo">
+    <img src="../../assets/logo/XBankLogo.png" />
+  </div>
+  <div class="squestion-container">
+    <div class="squestion-header">
+      Security Question: What is the name of your first pet?
+    </div>
+    <div class="squestion-form">
+      <form>
+        <mat-form-field>
+          <mat-label>Answer</mat-label>
+          <input
+            matInput
+            [formControl]="squestionFormControl"
+            [errorStateMatcher]="matcher"
+            placeholder="Enter your Security Answer"
+          />
+          <br />
+          <mat-error *ngIf="squestionFormControl.hasError('required')">
+            Enter your <strong>Security Answer</strong>
+          </mat-error>
+        </mat-form-field>
+        <br />
+        <button mat-raised-button color="primary">OK</button>
+        <button mat-raised-button color="warn">Cancel</button>
+      </form>
+    </div>
+  </div>
+  <div class="squestion-warning">
+    <h3>WARNING:</h3>
+    For security purposes, we would like you to enter your personal security
+    question everytime you login.
+  </div>
+</div>

@@ -1,0 +1,104 @@
+a {
+  height: 100px;
+  top: 40%;
+  position: relative;
+  margin: 0 25px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.header-container {
+  height: 100px;
+  background-color: rgba(0, 0, 255, 0.7);
+  width: 100%;
+  color: white;
+}
+
+.left-div {
+  width: 50%;
+  float: left;
+}
+
+.left-container {
+  height: 100px;
+  width: 100%;
+}
+
+.right-div {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+
+.right-container {
+  height: 100px;
+  width: 100%;
+}
+
+.header-font {
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+  bottom: 35%;
+  position: relative;
+  letter-spacing: 5px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .left-container {
+    max-width: 20%;
+  }
+
+  .header-font {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .header-container {
+    height: 125px;
+  }
+
+  .left-div,
+  .right-div {
+    height: 50px;
+    width: 100%;
+  }
+
+  .left-container {
+    width: 60%;
+  }
+
+  .right-container {
+    width: 100%;
+  }
+
+  .left-container,
+  .right-container {
+    margin: auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  a {
+    margin: 0 15px;
+  }
+}
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

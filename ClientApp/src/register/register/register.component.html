@@ -1,0 +1,72 @@
+<div class="container">
+  <h2>REGISTER</h2>
+  <div class="personal-info-container">
+    <div class="personal-information-form">
+      <form class="register-form">
+        <h3>PERSONAL INFORMATION</h3>
+        <mat-form-field>
+          <mat-label>First Name</mat-label>
+          <input type="text" matInput [formControl]="fNameFormControl" placeholder="Enter your first name"/>
+          <mat-error *ngIf="fNameFormControl.hasError('required')">
+            Enter a valid first name
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Last Name</mat-label>
+          <input type="text" matInput [formControl]="lNameFormControl" placeholder="Enter your last name"/>
+          <mat-error *ngIf="lNameFormControl.hasError('required')">
+            Enter a valid last name
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Date of Birth</mat-label>
+          <input type="date" matInput [formControl]="dateOfBirthFormControl" placeholder="Enter your birthdate"/>
+          <mat-error *ngIf="dateOfBirthFormControl.hasError('required')">
+            Enter a valid date of birth
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input type="text" matInput [formControl]="emailFormControl" placeholder="Enter your email"/>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Enter a valid email
+          </mat-error>
+        </mat-form-field>
+
+        <h3>ACCOUNT INFORMATION</h3>
+        <mat-form-field>
+          <mat-label>Username</mat-label>
+          <input type="text" matInput [formControl]="usernameFormControl" placeholder="Enter your username"/>
+          <mat-error *ngIf="usernameFormControl.hasError('required')">
+            Enter a valid username
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input type="password" matInput [formControl]="passwordFormControl" placeholder="Enter your password"/>
+          <mat-error *ngIf="passwordFormControl.hasError('required')">
+            Enter a valid password
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Savings</mat-label>
+          <input type="number" matInput [formControl]="savingsFormControl" step="any" value="0.00" placeholder="Enter your savings deposit"/>
+          <mat-error *ngIf="savingsFormControl.hasError('required')">
+            Enter a valid savings deposit number
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Chequing</mat-label>
+          <input type="number" matInput [formControl]="chequingFormControl" step="any" value="0.00" placeholder="Enter your chequing deposit"/>
+          <mat-error *ngIf="chequingFormControl.hasError('required')">
+            Enter a valid chequing deposit number
+          </mat-error>
+        </mat-form-field>
+      </form>
+      <div class="register-form-button-container">
+        <a class="register-button" mat-raised-button>Register</a>
+        <a class="cancel-button" mat-raised-button>Cancel</a>
+      </div>
+    </div>
+  </div>
+</div>

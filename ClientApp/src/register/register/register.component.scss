@@ -1,0 +1,93 @@
+h2 {
+  border-bottom: 1px solid gray;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.container {
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.register-form{
+  width:50%;
+  margin: 0 auto;
+}
+
+.register-form-button-container{
+  width:20%;
+  margin: 0 auto
+}
+
+.register-form-button-container a{
+  margin: 10px;
+}
+
+.mat-form-field{
+  padding: 25px;
+  width: 40%;
+}
+
+.register-button {
+  margin-top: 10px;
+  background-color: yellow;
+  color: blue;
+}
+
+.cancel-button {
+  margin-top:10px;
+  background-color: blue;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .mat-form-field{
+    width:85%;
+    padding: 10px;
+  }
+
+  .register-form{
+    width: 80%;
+  }
+
+  .register-form-button-container{
+    width:50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .mat-form-field{
+    width:85%;
+    padding: 10px;
+  }
+
+  .register-form{
+    width: 80%;
+  }
+
+  .register-form-button-container{
+    width:50%;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}

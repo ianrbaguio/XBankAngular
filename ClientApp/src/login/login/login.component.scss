@@ -1,0 +1,167 @@
+form {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.full-page {
+  width: 100%;
+}
+
+.hero-image {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("/assets/logo/XBankLogo.png");
+  height: 500px;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.login-form {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  background-color: blue;
+  width: 50%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.login,
+.signup {
+  float: left;
+  padding: 35px;
+}
+
+.login {
+  width: 40%;
+  border-right: 2px solid white;
+}
+
+.signup {
+  width: 30%;
+}
+
+.login span,
+.signup span {
+  font-size: 25px;
+}
+
+.mat-form-field {
+  width: 80%;
+}
+
+.mat-raised-button {
+  margin-top: 10px;
+  background-color: yellow;
+  color: black;
+}
+
+.why-xbank {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.why-xbank h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mat-card-header {
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.mat-card-content p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.why-xbank-card {
+  text-align: center;
+  width: 25%;
+  display: inline-block;
+  margin: 10px;
+}
+
+.mat-card-title {
+  font-size: 12px;
+}
+
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.5), 0 1px 1px 0 rgba(0, 0, 0, 0.5),
+    0 1px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+::ng-deep .mat-form-field-wrapper {
+  width: 100% !important;
+}
+
+::ng-deep .mat-form-field-label {
+  /*change color of label*/
+  color: white !important;
+}
+
+::ng-deep .mat-form-field-empty.mat-form-field-label {
+  color: white !important;
+}
+
+::ng-deep .mat-form-field-underline {
+  /*change color of underline*/
+  background-color: white !important;
+  color: white !important;
+}
+
+::ng-deep .mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: white !important;
+  color: white !important;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .login {
+    border-right: none;
+    border-bottom: 2px solid white;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .login-form {
+    top: 10%;
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .signup {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .login-form {
+    top: 5%;
+    height: 450px;
+  }
+  .why-xbank-card {
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}

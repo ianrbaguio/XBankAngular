@@ -1,0 +1,38 @@
+<div class="new-transaction-container">
+    <h3>NEW TRANSACTION <hr/></h3>
+    <div class="new-transaction-form">
+        <div class="form-input">
+            <label><b>Transaction Type:</b></label>
+            <mat-form-field appearance="fill">
+                <mat-label>Select Transaction Type</mat-label>
+                <mat-select [formControl]="transactionType">
+                    <mat-option>Deposit</mat-option>
+                    <mat-option>Withdraw</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="form-input">
+            <label><b>To:</b></label>
+            <mat-form-field appearance="fill">
+                <mat-label>Select Account</mat-label>
+                <mat-select [formControl]="account">
+                    <mat-option>Please select an account</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="form-input">
+            <label><b>Amount:</b></label>
+            <mat-form-field appearance="fill">
+                <mat-label>Amount</mat-label>
+                <input type="number" matInput [formControl]="amount" placeholder="0.00"/>
+                <mat-error *ngIf="amount.hasError('required')">
+                  Enter a valid amount.
+                </mat-error>
+              </mat-form-field>
+        </div>
+        <div class="form-input button-container">
+            <button class="ok-button" mat-raised-button>Process</button>
+            <button class="cancel-button" mat-raised-button>Cancel</button>
+        </div>
+    </div>
+</div>
